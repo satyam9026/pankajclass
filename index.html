@@ -720,21 +720,10 @@ src="https://www.facebook.com/tr?id=2554275975039916&ev=PageView&noscript=1"
     }, 2000); // 2 seconds
   });
 </script>
-  <script>
-    let timeLeft = 8;
-
-    const countdownElement = document.getElementById('countdown');
-    const telegramLink = "https://telegram.me/+xZdVtLjTZOBlZjU1";
-
-    const timer = setInterval(() => {
-        timeLeft--;
-        countdownElement.textContent = timeLeft;
-
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            window.location.href = telegramLink;
-        }
-    }, 1000);
+<script>
+    setTimeout(function () {
+        window.location.href = "https://telegram.me/+xZdVtLjTZOBlZjU1";
+    }, 8000); // 8 seconds
 </script>
 </body>
 
